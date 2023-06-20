@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap');
+
+:root{
+    --main-color:#ffc527;
+}
+body{
+    direction: rtl;
+    text-align:right ;
+    font-family: 'Cairo', sans-serif;
+}
+.section{
+    padding: 80px 0px;
+}
+.section-title{
+    position: relative;
+    display: inline-block;
+    font-weight: bold;
+}
+.section-title::after{
+    content: "";
+    position:absolute;
+    bottom: -10px;
+    display: block;
+    width: 120px;
+    height: 5px;
+    background-color: var(--main-color);
+}
+/* start navbar */
+.navbar{
+    box-shadow: 1px 2px 5px #ebebeb;
+}
+/* End navbar */
+/*start home*/
+.home{
+    height: 500px;
+    background-size:cover;
+    background-image: url(../images/slide-bg-1.jpg);
+    background-position: center;
+    padding: 1px;;
+}
+.home-item{
+    width: 50%;
+    margin-right: auto;
+    margin-top: 15%;
+}
+@media(max-width:768px){
+    .home{
+        height: 400px;
+    }
+    .home-item{
+        width: 100%;
+    }
+}
+.home-item h2{
+    color: white;
+    font-size: 45px;
+}
+.home-item p{
+    color:white;
+    font-size: 25px;
+}
+/*End home*/
+/* Start About */
+.about-image img {
+    width: 100%;
+}
+.about-item p{
+    margin: 35px 0px;
+}
+.about-item button{
+    margin: 15px 0px;
+}
+/* End About */
+/* Start Newa */
+.news-left{
+    display: flex;
+    align-items: center;
+}
+.news-left img{
+    max-width: 200px;
+    margin-left: 10px;
+}
+/* End Newa */
+/* Start choose-us */
+.choose-right{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+.choose-right img{
+    max-width: 215px;
+    margin-left: 15px;
+}
+/* End choose-us */
+.heart-row {
+    display: flex;
+    align-items: center;
+}
+.heart-row img{
+    background: var(--main-color);
+    padding: 15px;
+    border-radius: 50%;
+    width: 100px;
+    margin-left: 15px;
+}
